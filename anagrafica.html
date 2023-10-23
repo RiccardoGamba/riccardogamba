@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <script>
+		function stampa(){
+		var print = document.getElementById("Riccardo").value;
+		document.getElementById("dest").innerHTML=print;
+		
+		var print = document.getElementById("Gamba").value;
+		document.getElementById("f").innerHTML=print;
+		
+		var print = document.getElementById("via").value;
+		document.getElementById("g").innerHTML=print;
+		
+		var print = document.getElementById("Rho").value;
+		document.getElementById("j").innerHTML=print;
+		
+		var print = document.getElementById("4").value;
+		document.getElementById("h").innerHTML=print;
+		 
+		
+		}
+	</script>
+	</head>
+	
+   
+	<body>
+		<h1> ANAGRAFICA</h1>
+		<h3> Nome </h3>
+		<input type="text" id="Riccardo">
+		<p></P>
+		<h3> Cognome </h3>
+		<input type="text" id="Gamba">
+		<p></P>
+		<h3> Indirizzo </h3>
+		<input type="text" id="via">
+		<h3> Luogo di nascita </h3>
+		<p></P>
+		<input type="text" id="Rho">
+		<h3>CAP </h3>
+		<p></P>
+		<input type="text" id="4">
+		<p></P>
+		
+		<input type ="button" value = "STAMPA" onclick="stampa()">
+		<p id = "dest"></p>
+		<p id = "f"></p>
+        <p id = "g"></p>
+		<p id = "j"></p>
+		<p id = "h"></p>
+	</body>
+	
+	</html>
+	<p> Le materie in cui ci sono delle valutazioni sul registro: </p>
+<label for="myCheck"> Inglese : </label>
+<input type= "checkbox" id="inglese">
+<label for="myCheck"> Storia : </label>
+<input type= "checkbox" id="storia">
+<input type= "button" value= SCHIACCIA onclick= "myFunction()">
+<p id= "text"></p>
+<p id= "text1"></p>
+
+<script>
+ function myFunction(){
+   var ing= document.getElementById("inglese");
+   var sto= document.getElementById("storia");
+
+if(ing.checked){
+	document.getElementById("text"). innerHTML= "Inglese";
+} else{ 
+	document.getElementById("text").innerHTML= "";
+}
+if (sto.checked){
+	document.getElementById("text1").innerHTML= "Storia";
+} else{ 
+	document.getElementById("text1").innerHTML= "";
+}
+}
+</script>
+</body>
+<html>
+<body>
+
+<h1> Radio Buttons </h1>
+
+<form action="/action_page.php">
+  <p>Inserisci la tua materia prferita:</p>
+  <input type="radio" id="html" name="mat_preferita" value="Matematica">
+  <label for="Matematica">Matematica</label><br>
+  <input type="radio" id="sistemi" name="mat_preferita" value="Sistemi">
+  <label for="Sistemi">Sistemi</label><br>
+  <input type="radio" id="TPS" name="mat_preferita" value="TPS">
+  <label for="TPS">TPS</label>
+
+  <br>  
+
+  <p>inserisci la tua età:</p>
+  <input type="radio" id="età1" name="età" value="16">
+  <label for="età1">16</label><br>
+  <input type="radio" id="età2" name="età" value="17">
+  <label for="età2">17</label><br>  
+  <input type="radio" id="età3" name="età" value="18">
+  <label for="età3">18</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
